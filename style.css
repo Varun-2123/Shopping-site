@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(203, 240, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.heading{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 40px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+div.box{
+    border-radius: 5px;
+    width: 50vw;
+    height: 35vh;
+}
+div.formbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+}
+form{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgb(193, 192, 192);
+    padding: 0px 10px;
+    margin-top: 10px;
+    height: 5vh;
+    width: 20vw;
+}
+button{
+    color: white;
+    font-size: large;
+    margin-top: 50px;
+    height: 5vh;
+    width: 21vw;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(34, 151, 153);
+}
+a button:hover{
+    cursor: pointer;
+}
+div.passbox{
+    display: flex;
+    height: 31vh;
+    background-color: rgb(66, 66, 66);
+}
+.container{
+    width: 43%;
+    height: 88%;
+    margin: 2%;
+    padding: 1%;
+    color: white;
+    font-family: cursive;
+}
+ul{
+    margin-top: 20px;
+}
+li{
+    font-size: large;
+    list-style: none;
+    margin-top: 3px;
+}
+@media only screen and (orientation: portrait){
+    div.box{
+        width: 80vw;
+    }
+    input{
+        width: 55vw;
+    }
+    button{
+        width: 55vw;
+    }
+    div.passbox{
+        overflow-y: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        width: 90%;
+    }
+}
